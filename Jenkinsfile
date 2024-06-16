@@ -20,7 +20,7 @@ pipeline {
         stage('SonarQube Scan') {
             steps {
                 withSonarQubeEnv('MySonarQube') {
-                    bat "mvn sonar:sonar -Dsonar.token=<your_token>"
+                    bat "mvn sonar:sonar -Dsonar.token=sqa_923b3058f68d75aa6783527db3cb23e62d04fbad"
                 }				
             }
         }	   
